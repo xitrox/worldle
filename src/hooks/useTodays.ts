@@ -226,6 +226,15 @@ function getCountry(dayString: string) {
     pickingDate = pickingDate.plus({ day: 1 });
   } while (pickingDate <= currentDayDate);
 
+  // Random Country selection based on now instead of date
+  const countrySelection =
+    smallCountryCooldown < 0 ? countriesWithImage : bigEnoughCountriesWithImage;
+  const date = Date.now().toString();
+  const countryIndex = Math.floor(
+    seedrandom.alea(date)() * countrySelection.length
+  );
+  pickedCountry = countrySelection[countryIndex];
+
   return pickedCountry;
 }
 

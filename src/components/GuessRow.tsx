@@ -18,7 +18,7 @@ import { areas } from "../domain/countries.area";
 import { countries } from "../domain/countries.position";
 import { useTranslation } from "react-i18next";
 
-const SQUARE_ANIMATION_LENGTH = 250;
+const SQUARE_ANIMATION_LENGTH = 100;
 type AnimationState = "NOT_STARTED" | "RUNNING" | "ENDED";
 
 interface GuessRowProps {

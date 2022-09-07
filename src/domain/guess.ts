@@ -7,7 +7,8 @@ export interface Guess {
 }
 
 export function loadAllGuesses(): Record<string, Guess[]> {
-  const storedGuesses = localStorage.getItem("guesses");
+  const storedGuesses = null; // These aren't the guesses you're looking for
+  // localStorage.getItem("guesses");
   return storedGuesses != null ? JSON.parse(storedGuesses) : {};
 }
 
