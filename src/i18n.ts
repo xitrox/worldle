@@ -15,6 +15,7 @@ export const translations = {
       copy: "Copied results to clipboard",
       showCountry: "🗺️ Show map!",
       cancelRotation: "🌀 Cancel rotation",
+      newRound: "🔄️ new round",
       settings: {
         title: "Settings",
         distanceUnit: "Unit of distance",
@@ -450,6 +451,7 @@ export const translations = {
       copy: "Ergebnis in Zwischenablage kopiert!",
       showCountry: "🗺️ Karte zeigen!",
       cancelRotation: "🌀 Rotation abbrechen",
+      newRounde: "🔄️ neue Runde",
       settings: {
         title: "Einstellungen",
         distanceUnit: "Entfernungseinheit",

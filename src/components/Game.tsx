@@ -206,8 +206,15 @@ export function Game({ settingsData, updateSettings }: GameProps) {
         {gameEnded && country ? (
           <>
             <div className="flex flex-wrap gap-4 justify-center">
-              <button type="button" onClick={refreshPage}>
-                Refresh!
+              <button
+                className="font-bold rounded p-1 border-2 uppercase mb-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
+                type="button"
+                onClick={refreshPage}
+              >
+                <Twemoji
+                  text={t("newRound")}
+                  options={{ className: "inline-block" }}
+                />
               </button>
             </div>
           </>
